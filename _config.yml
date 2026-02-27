@@ -736,3 +736,7 @@ images: assets/images
 
 # Theme version
 version: 5.1.1
+
+# Post date fix for GitHub Pages
+future: true
+timezone: Asia/Seoul
