@@ -15,6 +15,8 @@ tags:
 
 ---
 
+### Annotation
+
 #### @SpringBootApplication
 
 - Spring Boot를 자동으로 실행시켜주는 어노테이션이다.
