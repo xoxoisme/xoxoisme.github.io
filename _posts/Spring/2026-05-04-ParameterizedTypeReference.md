@@ -26,7 +26,7 @@ tags:
 
 ```java
 List<String> list = new ArrayList<>();
-list.add(123); // ❌ 컴파일 에러 — 여기서 잡힘
+list.add(123); // 컴파일 에러
 ```
 
 - 직접 값을 넣으면 걸리지만, **런타임 시 외부에서 오는 데이터는 확인하지 못한다**.
@@ -38,7 +38,7 @@ list.add(123); // ❌ 컴파일 에러 — 여기서 잡힘
 // 작성한 코드
 List<String> list = new ArrayList<>();
 
-// 컴파일 후 바이트코드 (실제 JVM이 보는 것)
+// 컴파일 후 바이트코드
 List list = new ArrayList();
 ```
 
@@ -53,11 +53,11 @@ List list = new ArrayList();
 ### 사용 안할 경우
 
 ```java
-// ❌ Map으로 받기 — 매번 이렇게 써야 함
+// Map으로 받으면 매번 직접 캐스팅
 Map<String, Object> userMap = (Map<String, Object>) list.get(0);
 String name = (String) userMap.get("name");
 
-// ✅ ParameterizedTypeReference 사용
+// ParameterizedTypeReference 사용
 List<User> users = response.getBody();
 String name = users.get(0).getName(); // 훨씬 깔끔
 ```
@@ -77,5 +77,5 @@ String name = users.get(0).getName(); // 훨씬 깔끔
 ```
 
 - `ParameterizedTypeReference<>()`를 사용함으로써 `TmdbPageResponse<TmdbTvResult>`로 **역직렬화가 가능**하게 된다.
-- 사용 안하고 캐스팅을 하게 되면 매번 직접 캐스팅을 해주어야 하는 불편함이 생긴다.
+- 사용 안하고 캐스팅을 하게 되면 매번 **직접 캐스팅을 해주어야 하는 불편함**이 생긴다.
 - 유지보수와 타입 안정성이 최악이 된다는 말이다.
