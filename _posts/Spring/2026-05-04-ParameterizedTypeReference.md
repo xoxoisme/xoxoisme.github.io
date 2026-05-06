@@ -1,6 +1,6 @@
 ---
 title: ParameterizedTypeReference
-date: 2026-05-04-13:00
+date: 2026-05-04 13:00
 categories:
 - Spring
 tags:

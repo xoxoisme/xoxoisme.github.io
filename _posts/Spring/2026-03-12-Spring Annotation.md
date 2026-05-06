@@ -1,6 +1,6 @@
 ---
 title: Spring Annotation
-date: 2026-03-12-19:00
+date: 2026-03-12 19:00
 categories:
 - Spring
 tags:
