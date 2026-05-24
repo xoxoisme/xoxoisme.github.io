@@ -7,7 +7,7 @@ tags:
 - Spring
 ---
 
-> "**ParameterizedTypeReference는 제네릭 타입을 갖는 객체의 타입 정보를 보존하기 위한 목적으로 사용된다.**"
+> "ParameterizedTypeReference는 제네릭 타입을 갖는 객체의 타입 정보를 보존하기 위한 목적으로 사용된다."
 
 ---
 
