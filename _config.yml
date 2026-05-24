@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: Kwontae's Dev Blog
+title: Kwontae's Blog
 subtitle: “Effort that satisfies me is not real effort.”
-description: Kwontae 개발 블로그
-author: Kwon Tae Hyun
+description: 
+author: KwonTae
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: ko
 date_format: '%Y-%m-%d'
