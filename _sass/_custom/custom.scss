@@ -11,9 +11,17 @@ body {
   font-family: 'Paperlogy', sans-serif;
 }
 
-// 굵게(bold) 시 형광펜 효과
+// 굵게(bold) 시 노란 형광펜 효과
 strong {
   background-color: #fff59d;
   padding: 0 2px;
   border-radius: 2px;
+}
+
+// 밑줄(<u>) 시 빨간(분홍) 형광펜 효과
+u {
+  background-color: #ffb3b3;
+  padding: 0 2px;
+  border-radius: 2px;
+  text-decoration: none;
 }
