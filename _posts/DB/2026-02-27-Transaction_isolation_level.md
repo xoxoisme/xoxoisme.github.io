@@ -42,6 +42,8 @@ tags:
 |  2   | Repeatable Read  |    PHANTOM READ     | 조회는 고정되나 삽입은 허용 |
 |  3   | Seralizable  |        없음         |   성능 저하/병렬처리 제한   |
 
+---
+
 ### Read Uncommitted(lv.0)
 
 > 성능을 최우선으로 하나, 실무에선 거의 쓰지 않는다.
@@ -65,6 +67,8 @@ ROLLBACK;
 ```
 
 - 트랜잭션 B가 읽은 가격(800)은 의미 없는 데이터가 된다.
+
+---
 
 ### Read Commited(lv.1)
 
@@ -92,6 +96,8 @@ SELECT balance FROM account WHERE id = 1;
 - 트랜잭션 B는 같은 행을 두 번 조회했으나, 값이 달라진다.
 - B는 데이터를 조회한 이후 바로 락을 해제한다.
 
+---
+
 ### Repeatable Read(lv.2)
 
 > 동일한 행에 대한 조회를 막지만, 새로운 행의 삽입은 막지 못한다.
@@ -116,6 +122,8 @@ SELECT * FROM orders WHERE price >= 1000;
 
 - 트랜잭션 B는 같은 조건을 조회했으나, 새로운 데이터가 생겼다.
 - 이미 읽은 행에 대해서만 락이 걸려있다.
+
+---
 
 ### Serializable Read(lv.3)
 
