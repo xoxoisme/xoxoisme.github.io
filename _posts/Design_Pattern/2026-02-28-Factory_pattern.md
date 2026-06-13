@@ -1,8 +1,7 @@
 ---
 title: 팩토리 패턴
 date: 2026-02-28 14:30
-categories:
-- Design Pattern
+category: Design_Pattern
 
 tags:
 - 상속

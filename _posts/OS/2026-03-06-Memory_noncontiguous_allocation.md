@@ -1,8 +1,7 @@
 ---
 title: 메모리의 불연속 할당
 date: 2026-03-06 00:30
-categories:
-- OS
+category: OS
 tags:
 - OS
 - Virtual Memory

@@ -3,8 +3,7 @@ title: Dispatcher Servlet
 date: 2026-03-10 02:00
 tags:
 - Java
-categories:
-- Java
+category: Java
 ---
 
 > "서블릿은 Java를 사용하여 웹 페이지를 동적으로 생성하는 서버측 프로그램이다. 디스패처 서블릿은 이후 나온 중앙 관리자 역할이다."

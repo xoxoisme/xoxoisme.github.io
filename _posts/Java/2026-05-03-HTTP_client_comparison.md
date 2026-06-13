@@ -4,8 +4,7 @@ date: 2026-05-03 15:00
 tags:
 - Java
 - Http
-categories:
-- Java
+category: Java
 ---
 
 > "HTTP client는 기술의 발전, 요구사항의 다양화, 환경마다 철학이 달라졌기에 그에 맞게 진화했다."

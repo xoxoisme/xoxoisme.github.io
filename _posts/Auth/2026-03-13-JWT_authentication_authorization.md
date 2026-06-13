@@ -1,8 +1,7 @@
 ---
 title: JWT 인증/인가
 date: 2026-03-13 21:00
-categories:
-- Auth
+category: Auth
 tags:
 - Auth
 - JWT

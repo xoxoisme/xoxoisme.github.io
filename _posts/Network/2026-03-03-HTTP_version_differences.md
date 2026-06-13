@@ -1,8 +1,7 @@
 ---
 title: HTTP 버전별 차이
 date: 2026-03-03 19:45
-categories:
-- Network
+category: Network
 tags:
 - Network
 - Http

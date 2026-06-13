@@ -1,7 +1,7 @@
 ---
 title: 대규모 마이데이터 서비스 안정적 운영
 date: 2026-06-09 22:00
-category: Case Study
+category: Case_Study
 tags:
 - Toss SLASH
 - Coordinator

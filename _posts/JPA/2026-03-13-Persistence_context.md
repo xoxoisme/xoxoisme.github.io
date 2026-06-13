@@ -1,8 +1,7 @@
 ---
 title: 영속성 컨텍스트
 date: 2026-03-13 15:00
-categories:
-- JPA
+category: JPA
 tags:
 - JPA
 ---

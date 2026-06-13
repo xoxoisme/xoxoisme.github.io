@@ -1,8 +1,7 @@
 ---
 title: ParameterizedTypeReference
 date: 2026-05-04 13:00
-categories:
-- Spring
+category: Spring
 tags:
 - Spring
 ---

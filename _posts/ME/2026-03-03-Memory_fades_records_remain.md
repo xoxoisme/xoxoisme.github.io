@@ -1,8 +1,7 @@
 ---
 title: 기억은 흐르지만, 기록은 남는다
 date: 2026-03-03 20:30
-categories:
-- ME
+category: ME
 tags:
 - Me
 - 기록하는 습관

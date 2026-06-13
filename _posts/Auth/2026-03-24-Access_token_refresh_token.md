@@ -1,8 +1,7 @@
 ---
 title: Access Token/Refresh Token
 date: 2026-03-24 21:00
-categories:
-- Auth
+category: Auth
 tags:
 - Auth
 - JWT

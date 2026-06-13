@@ -1,8 +1,7 @@
 ---
 title: Spring 프레임워크 구조
 date: 2026-03-13 00:30
-categories:
-- Spring
+category: Spring
 tags:
 - Spring
 - Framework

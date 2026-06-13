@@ -3,8 +3,7 @@ title: Global Exception
 date: 2026-04-27 16:00
 tags:
 - Java
-categories:
-- Java
+category: Java
 ---
 
 > "전역 예외처리는 애플리케이션에서 발생하는 예외를 한 곳에서 모아 일관된 형식으로 처리해준다."

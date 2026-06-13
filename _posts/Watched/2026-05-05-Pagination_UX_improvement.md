@@ -1,8 +1,7 @@
 ---
 title: Pagination 사용자 경험 개선
 date: 2026-05-05 14:00
-categories:
-- Watched
+category: Watched
 tags:
 - Java
 - Spring

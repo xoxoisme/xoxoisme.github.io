@@ -1,7 +1,7 @@
 ---
 title: OAuth2.0 Stateless
 date: 2026-06-07 17:09
-category: Mind Keyword
+category: Mind_Keyword
 tags:
 - OAuth
 - JWT

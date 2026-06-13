@@ -1,8 +1,7 @@
 ---
 title: JSON Web Token(JWT)
 date: 2026-05-11 22:00
-categories:
-- Spring Security
+category: Spring_Security
 tags:
 - Java
 - Spring

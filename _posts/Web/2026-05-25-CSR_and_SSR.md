@@ -1,8 +1,7 @@
 ---
 title: CSR과 SSR
 date: 2026-05-25 18:12
-categories:
-- Web
+category: Web
 tags:
 - Rendering
 ---

@@ -1,8 +1,7 @@
 ---
 title: 자료 구조의 시간 복잡도
 date: 2026-03-09 21:00
-categories:
-- Data Structure
+category: Data_Structure
 tags:
 - Array
 - Stack

@@ -1,8 +1,7 @@
 ---
 title: 싱글톤 패턴
 date: 2026-02-28 00:00
-categories:
-- Design Pattern
+category: Design_Pattern
 tags:
 - DI
 ---

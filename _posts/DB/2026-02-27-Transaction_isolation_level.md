@@ -1,8 +1,7 @@
 ---
 title: 트랜잭션 격리 수준
 date: 2026-02-27 17:30
-categories:
-- DB
+category: DB
 
 tags:
 - DB
