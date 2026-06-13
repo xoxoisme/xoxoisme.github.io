@@ -24,11 +24,13 @@ tags:
 
 |        이름         |             설명              |
 | :-----------------: | :---------------------------: |
-|  Atomicity(원자성)  | 성공은 영구저장/실패는 되돌림 |
-| Consistency(일관성) |        항상 정상 유지         |
-|  Isolation(고립성)  |           간섭 금지           |
-| Durability(지속성)  |           영구 보존           |
+|  Atomicity(원자성)  | All or Nothing |
+| Consistency(일관성) |        항상 조건 유지         |
+|  Isolation(고립성)  |           트랜 잭션 간 간섭 금지           |
+| Durability(지속성)  |           영구 보존(커밋 시)           |
 
+- Atomicity는 성공하면 영구 저장하고, 실패하면 되돌려야한다.
+- Consistecy는 DB레벨(UNIQUE, FOREIGN), 앱레벨(개발자의 비즈니스 로직)이 있다. 규칙을 위반하면 안된다.
 - ACID 원칙 중 트랜잭션 간 간섭하지 못하도록 하는 **Isolation(고립성)**과 관련해 격리 수준에 대한 레벨이 존재한다.
 
 ---
@@ -42,14 +44,14 @@ tags:
 |  2   | Repeatable Read  |    PHANTOM READ     | 조회는 고정되나 삽입은 허용 |
 |  3   | Seralizable  |        없음         |   성능 저하/병렬처리 제한   |
 
-### Read Uncommitted(0)
+### Read Uncommitted(lv.0)
 
 > 성능을 최우선으로 하나, 실무에선 거의 쓰지 않는다.
 
 - 격리 수준을 아예 설정하지 않은 것이다.
 - `COMMIT`/`ROLLBACK` 하지 않은 데이터도 접근이 가능하다.
 
-**Dirty Read(확정되지 않은 데이터를 조회) 문제가 발생할 가능성이 있다.**
+**Dirty Read(확정되지 않은 데이터를 조회)** 문제가 발생할 가능성이 있다.
 
 ```sql
 INSERT INTO account VALUES (1, 1000);
@@ -66,14 +68,14 @@ ROLLBACK;
 
 - 트랜잭션 B가 읽은 가격(800)은 의미 없는 데이터가 된다.
 
-### Read Commited(1)
+### Read Commited(lv.1)
 
 > 조회를 제외한, 삽입/삭제/수정은 락 영향을 받는다.
 
 - `COMMIT`한 데이터를 다른 트랜잭션이 접근하게 한다.
   - 조회는 `COMMIT` 상관없이 가능하다.
 
-**Non-repeatable Read(비반복 읽기) 문제가 발생할 가능성이 있다.**
+**Non-repeatable Read(비반복 읽기)** 문제가 발생할 가능성이 있다.
 
 ```sql
 INSERT INTO account VALUES (1, 1000);
@@ -90,14 +92,15 @@ SELECT balance FROM account WHERE id = 1;
 ```
 
 - 트랜잭션 B는 같은 행을 두 번 조회했으나, 값이 달라진다.
+- B는 데이터를 조회한 이후 바로 락을 해제한다.
 
-### Repeatable Read(2)
+### Repeatable Read(lv.2)
 
 > 동일한 행에 대한 조회를 막지만, 새로운 행의 삽입은 막지 못한다.
 
 - 조회한 행에 대한 락을 걸 수 있다.
 
-**Phantom Read(유령 읽기) 문제가 발생할 가능성이 있다.**
+**Phantom Read(유령 읽기)** 문제가 발생할 가능성이 있다.
 
 ```sql
 INSERT INTO account VALUES (1, 1000);
@@ -114,8 +117,9 @@ SELECT * FROM orders WHERE price >= 1000;
 ```
 
 - 트랜잭션 B는 같은 조건을 조회했으나, 새로운 데이터가 생겼다.
+- 이미 읽은 행에 대해서만 락이 걸려있다.
 
-### Serializable Read(3)
+### Serializable Read(lv.3)
 
 > 가장 강력한 격리 수준이나, 성능과 동시성은 낮아진다.
 
