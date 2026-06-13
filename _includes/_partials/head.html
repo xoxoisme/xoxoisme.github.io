@@ -61,6 +61,11 @@
 
 {% include _partials/head/external-fonts.html %}
 
+<!-- Nanum Myeongjo (세리프, 한글 포함) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
 {% assign font_awesome_uri = site.vendors._internal | append: '/font-awesome/css/font-awesome.min.css?v=4.6.2' | relative_url %}
 {% if site.vendors.fontawesome %}
   {% assign font_awesome_uri = site.vendors.fontawesome %}

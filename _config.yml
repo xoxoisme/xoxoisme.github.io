@@ -170,8 +170,9 @@ font:
   # default font: Lato
   global:
     # external: true will load this font family from host.
+    # 나눔명조는 head.html에서 직접 로드(한글 subset 포함)하므로 external은 false 유지
     external: false
-    family: Paperlogy
+    family: Nanum Myeongjo
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
