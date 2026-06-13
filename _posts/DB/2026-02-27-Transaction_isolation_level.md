@@ -2,11 +2,9 @@
 title: 트랜잭션 격리 수준
 date: 2026-02-27 17:30
 category: DB
-
 tags:
-- DB
+- ACID
 - Transaction
-
 ---
 
 >  "트랜잭션 격리 수준이 높을수록 일관성은 강화되지만, 성능과 동시성은 저하된다."
