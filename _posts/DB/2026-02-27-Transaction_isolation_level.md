@@ -130,5 +130,3 @@ SELECT * FROM orders WHERE price >= 1000;
 
 - https://tlatmsrud.tistory.com/118
 - https://mangkyu.tistory.com/299
-
----
