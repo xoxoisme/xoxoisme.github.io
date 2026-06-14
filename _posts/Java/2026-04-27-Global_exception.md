@@ -1,9 +1,9 @@
 ---
 title: Global Exception
 date: 2026-04-27 16:00
-tags:
-- Java
 category:
+- Java
+tags:
 - Exception
 ---
 
