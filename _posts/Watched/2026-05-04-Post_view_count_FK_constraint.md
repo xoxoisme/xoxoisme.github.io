@@ -20,8 +20,8 @@ tags:
 
 ## 문제 상황
 
-- 컬렉션을 삭제해도 해당 컬렉션의 조회 이력 로그가 DB에 남아 있는 고아 레코드 문제가 발생했다.
-- 또한, `CollectionService.delete()`에서 `CollectionItem`은 삭제했으나 `CollectionView`는 삭제되지 않아 FK 제약이 생기면 삭제 시 무결성 오류가 발생할 수 있었다.
+- 컬렉션을 삭제해도 해당 컬렉션의 조회 이력 로그가 DB에 남아 있는 **고아 레코드 문제**가 발생했다.
+- 또한, `CollectionService.delete()`에서 `CollectionItem`은 삭제했으나 `CollectionView`는 삭제되지 않아 FK 제약이 생기면 삭제 시 **무결성 오류가 발생**할 수 있었다.
 
 ---
 
