@@ -260,7 +260,7 @@ public List<User> getUsers() {
 
 ---
 
-### Lombok Annotation
+### Lombok
 
 #### @NoArgsConstructor
 - 기본 생성자를 자동으로 추가한다.
@@ -295,7 +295,7 @@ public List<User> getUsers() {
 
 ---
 
-### JPA Annotation
+### JPA
 
 #### @Entity
 - 실제 DB 테이블과 매핑될 클래스임을 나타낸다.
@@ -319,3 +319,9 @@ public List<User> getUsers() {
 - SpringBootApplication 위에 적어준다.
 - 그리고 `@Entitylisteners(AuditingEntityListener.class)`를 해당 엔티티에 써준다.
 - 보통 BaseEntity를 만들어 상속하여 사용한다.(중복 코드 제거)
+
+---
+
+## References
+
+- [👉 어노테이션 정리](https://github.com/xoxoisme/spring-annotation)
