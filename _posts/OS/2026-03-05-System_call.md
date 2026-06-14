@@ -3,7 +3,6 @@ title: 시스템 콜(System Call)
 date: 2026-03-05 22:30
 category: OS
 tags:
-- OS
 - System Call
 - Context Save
 - Context Switching
@@ -16,6 +15,13 @@ tags:
 ## 목표
 
 > 시스템 콜의 특징과 유저 영역과 커널 영역이 나뉘는 이유에 대해서 알아봅니다.
+
+---
+
+## 운영체제
+
+- 컴퓨터의 자원들을 관리하고 사용자가 효율적으로 사용할 수 있는 환경을 제공하는 프로그램이다.
+- 시스템 소프트웨어의 일종이다.
 
 ---
 
