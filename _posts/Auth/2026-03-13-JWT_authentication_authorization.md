@@ -3,7 +3,6 @@ title: JWT 인증/인가
 date: 2026-03-13 21:00
 category: Auth
 tags:
-- Auth
 - JWT
 ---
 
@@ -29,6 +28,8 @@ tags:
 
 #### 인가는 인증이 확인된 사용자에게만 적용한다.
 
+---
+
 ## XSS(Cross-Site Scripting)
 
 - 웹 사이트에 **악성 스크립트를 삽입해서** 다른 사용자의 브라우저에서 실행되게 하는 공격이다
@@ -40,6 +41,8 @@ tags:
 - 서버에 저장된 `sessionId`를 탈취해서 악성 코드가 담긴 서버는 이를 이용해 사용자의 정보를 탈취한다. 서버는 `sessionId` 요청으로 착각해 정보를 내어주는 것이다.
 - SameSite Cookie(다른 사이트의 쿠키 전송을 막음), Origin 체크, Spring Security(자동으로 CSRF 방어 기능이 활성화 되어 있음)로 방어할 수 있다.
 
+---
+
 ## Spring security
 
 - Spring에서 제공하는 프레임워크로 다양한 필터체인을 기반으로 인증, 인가, 보안 기능들을 제공한다.
@@ -48,6 +51,8 @@ tags:
 
 - Filter Chain은 `HTTP` 요청을 처리해준다.
 - 인증, 권한, 세션 필터 순서로 실행되며 각 필터는 보안 작업을 수행하고 다음의 필터로 요청을 전달한다.
+
+---
 
 #### Filter Chain은 여기서 DispatcherServlet 앞에서 동작해 request 요청을 처리하기 전에 Filter Chain을 적용할 수 있게 된다.
 
@@ -69,6 +74,8 @@ Principal
        ├ password
        └ roles
 ```
+
+---
 
 ## JWT 구조
 
