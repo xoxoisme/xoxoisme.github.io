@@ -1,10 +1,9 @@
 ---
 title: HTTP client 비교
 date: 2026-05-03 15:00
-tags:
-- Java
-- Http
 category: Java
+tags:
+- Http
 ---
 
 > "HTTP client는 기술의 발전, 요구사항의 다양화, 환경마다 철학이 달라졌기에 그에 맞게 진화했다."
@@ -48,6 +47,8 @@ public class ApiController {
 }
 ```
 
+---
+
 ### WebClient
 
 - **비동기** 방식이며 **논블로킹을** 지원한다.(동기 방식도 사용가능하다.)
@@ -63,6 +64,8 @@ webClient.get()              // Netty 이벤트 루프에 등록 (논블로킹)
   .bodyToMono(String.class)  // 응답 대기 (Netty가 비동기 처리)
   .block()                   // ← 여기서 내 스레드가 멈춤 (블로킹!)
 ```
+
+---
 
 ### OpenFeign
 - 구현 코드를 짜지 않고, 인터페이스에 어노테이션만 붙이면 알아서 구현체를 만들어준다.
@@ -93,6 +96,8 @@ public class OrderService {
     }
 }
 ```
+
+---
 
 ### RestClient
 
