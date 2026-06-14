@@ -1,9 +1,9 @@
 ---
 title: Dispatcher Servlet
 date: 2026-03-10 02:00
-tags:
-- Java
 category:
+- Java
+tags:
 - Serialization
 ---
 
