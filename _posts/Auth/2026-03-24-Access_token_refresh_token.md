@@ -3,7 +3,6 @@ title: Access Token/Refresh Token
 date: 2026-03-24 21:00
 category: Auth
 tags:
-- Auth
 - JWT
 ---
 
@@ -70,7 +69,9 @@ tags:
                 .compact();
     }
 ```
+
 - 위처럼, `tokenType`을 두어 Access/Refresh를 구분한다.
+- Refresh의 jti는 **오래 살아있고 재사용되는 토큰**이기에 탈취되면 특정 jti를 무효화시키기 위해 사용된다.
 
 ## 재발급
 ```java
