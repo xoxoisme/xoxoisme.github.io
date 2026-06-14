@@ -3,7 +3,6 @@ title: Spring 프레임워크 구조
 date: 2026-03-13 00:30
 category: Spring
 tags:
-- Spring
 - Framework
 ---
 
@@ -26,6 +25,8 @@ tags:
 - 이걸 서블릿 컨테이너가 대신하고 개발자는 비즈니스 로직만 작성할 수 있게 해준다.
 - 대표적인 예로 **Tomcat**이 있다.
 
+---
+
 ### Spring(스프링)
 
 - 자바로 웹 애플리케이션을 쉽게 만들도록 도와주는 애플리케이션 프레임워크이다.
@@ -37,10 +38,14 @@ tags:
 - DB 반영은 동시에 요청이 오면, Tomcat이 요청마다 스레드를 하나씩 할당하고 **Spring은 ThreadLocal 구조를 사용하기에** 겹칠 수 없다.
 - 다만, 같은 DB 데이터를 건드릴 경우 **DB의 트랜잭션과 락으로 해결**한다.
 
+---
+
 ### DispatcherServlet(디스패처 서블릿)
 
 - 모든 `HTTP` 요청을 한 곳에 모아 알맞은 컨트롤러로 전달하는 **중앙 관리자**이다.
 - `HandlerMapping`, `HandlerAdapter`을 통해 컨트롤러에 요청을 전달하고 실행 후, JSON 형태로 반환한다.
+
+---
 
 ### Controller(컨트롤러)
 
@@ -53,6 +58,8 @@ tags:
 ### DAO(Data Access Object = Repository)
 
 - 개발자가 직접 개발하는 컴포넌트로, DB에 직접적으로 접근하는 객체이다.
+
+---
 
 ### ViewResolver(뷰 리졸버)
 
