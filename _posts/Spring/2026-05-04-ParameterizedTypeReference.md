@@ -3,7 +3,7 @@ title: ParameterizedTypeReference
 date: 2026-05-04 13:00
 category: Spring
 tags:
-- Spring
+- Generic
 ---
 
 > "ParameterizedTypeReference는 제네릭 타입을 갖는 객체의 타입 정보를 보존하기 위한 목적으로 사용된다."
