@@ -2,18 +2,16 @@
 
 권태의 개발 블로그입니다.
 
-## 게시물 작성 형식
-
-각 게시물은 아래와 같은 Front Matter 형식으로 작성합니다.
+## 컨벤션
 
 ```yaml
+[Front Matter]
 ---
-title: HTTP 버전별 차이
-date: 2026-03-03 19:45
-category: Network
+title: Redis
+date: 2026-05-26 11:40
+category: Redis
 tags:
-- Http
-- Https
+- Memory
 ---
 ```
 
