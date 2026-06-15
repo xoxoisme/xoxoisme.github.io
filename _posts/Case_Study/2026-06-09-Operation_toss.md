@@ -7,7 +7,7 @@ tags:
 - Coordinator
 ---
 
-[컨퍼런스](https://www.youtube.com/watch?v=5I7ehDTvnWA)
+[컨퍼런스 바로가기](https://www.youtube.com/watch?v=5I7ehDTvnWA)
 
 ---
 

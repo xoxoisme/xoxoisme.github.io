@@ -7,7 +7,7 @@ tags:
 - Transaction
 ---
 
-[컨퍼런스](https://www.youtube.com/watch?v=xpwRTu47fqY)
+[컨퍼런스 바로가기](https://www.youtube.com/watch?v=xpwRTu47fqY)
 
 ---
 
