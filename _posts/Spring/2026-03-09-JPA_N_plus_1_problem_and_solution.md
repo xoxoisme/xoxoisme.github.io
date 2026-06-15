@@ -1,8 +1,9 @@
 ---
 title: JPA N+1 문제 이유 및 해결 방안
 date: 2026-03-09 04:00
-category: JPA
+category: Spring
 tags:
+- JPA
 - Fetch join
 - N+1
 ---
