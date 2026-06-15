@@ -10,3 +10,14 @@ strong {
   padding: 0 2px;
   border-radius: 2px;
 }
+
+// 본문 링크 파란색 (글자 + 밑줄)
+.post-body a {
+  color: #1a73e8;
+  border-bottom-color: #1a73e8;
+
+  &:hover {
+    color: #1558b0;
+    border-bottom-color: #1558b0;
+  }
+}
