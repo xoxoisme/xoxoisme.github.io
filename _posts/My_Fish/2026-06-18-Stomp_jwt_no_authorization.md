@@ -9,7 +9,7 @@ tags:
 - Trouble Shooting
 ---
 
-> "WebSocket 핸드셰이크 요청에 Authorization 헤더를 실을 수 없다."
+> "WebSocket 핸드셰이크 요청에는 Authorization 헤더를 실을 수 없다."
 
 ---
 
