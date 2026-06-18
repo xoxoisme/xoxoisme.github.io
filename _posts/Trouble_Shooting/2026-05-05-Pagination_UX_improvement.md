@@ -1,11 +1,11 @@
 ---
 title: Pagination 사용자 경험 개선
 date: 2026-05-05 14:00
-category: Watched
+category: Trouble_Shooting
 tags:
+- Watched
 - Java
 - Spring
-- Trouble Shooting
 - Pagination
 ---
 

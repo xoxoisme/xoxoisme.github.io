@@ -1,12 +1,12 @@
 ---
 title: STOMP 분기에서 JWT 인증 실패
 date: 2026-06-18 17:16
-category: My_Fish
+category: Trouble_Shooting
 tags:
 - WebSocket
 - STOMP
 - JWT
-- Trouble Shooting
+- My Fish
 ---
 
 > "WebSocket 핸드셰이크 요청에는 Authorization 헤더를 실을 수 없다."

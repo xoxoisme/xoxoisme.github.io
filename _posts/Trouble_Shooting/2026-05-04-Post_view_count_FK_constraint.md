@@ -1,11 +1,11 @@
 ---
 title: 컬렉션 조회수 관련 FK 제약
 date: 2026-05-04 14:00
-category: Watched
+category: Trouble_Shooting
 tags:
+- Watched
 - Java
 - Spring
-- Trouble Shooting
 ---
 
 > "컬렉션을 지워도 조회수 테이블의 기록이 그대로 남아있는 문제가 발생했다."

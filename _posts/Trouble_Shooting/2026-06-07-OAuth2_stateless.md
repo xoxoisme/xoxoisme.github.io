@@ -1,10 +1,11 @@
 ---
 title: OAuth2.0 Stateless
 date: 2026-06-07 17:09
-category: Mind_Keyword
+category: Trouble_Shooting
 tags:
 - OAuth
 - JWT
+- Mind Keyword
 ---
 
 > "OAuth2.0를 도입했으나, 세션을 사용하지 않고 완전한 Stateless를 지키고 싶었다."
