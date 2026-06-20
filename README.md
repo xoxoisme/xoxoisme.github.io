@@ -59,3 +59,6 @@ tags:
 | 2026-06-07 | Mind_Keyword | [OAuth2.0 Stateless](https://xoxoisme.github.io/mind_keyword/2026/06/07/OAuth2_stateless/) |
 | 2026-06-08 | Case_Study | [분산 환경에서 안전한 보상 트랜잭션](https://xoxoisme.github.io/case_study/2026/06/08/Transaction_toss/) |
 | 2026-06-09 | Case_Study | [대규모 마이데이터 서비스 안정적 운영](https://xoxoisme.github.io/case_study/2026/06/09/Operation_toss/) |
+| 2026-06-15 | DB | [CAP 이론](https://xoxoisme.github.io/db/2026/06/15/CAP/) |
+| 2026-06-18 | Trouble_Shooting | [STOMP 분기에서 JWT 인증 실패](https://xoxoisme.github.io/trouble_shooting/2026/06/18/Stomp_jwt_no_authorization/) |
+| 2026-06-18 | Trouble_Shooting | [토스 승인/내부 DB 저장 실패](https://xoxoisme.github.io/trouble_shooting/2026/06/18/Toss_payment_transaction_consistency/) |
